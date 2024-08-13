@@ -1,0 +1,560 @@
+inval=int(input('Input an integer between 2 and 5: '))
+if inval>=2 and inval<=5:
+  z=[1,3,5,7,9,2,4,6,8,10]
+  for i in range(len(z)):
+    if z % inval == 0:
+      print('z[',i,'] =',z[i],'is evenly divisible by', inval)
+    else:
+      print('z[',i,'] =',z[i],'is not evenly divisible by',inval)
+else:
+  print('You did not enter a value between 2 and 5')
+***************************************************
+instr=input('Input a name: ')
+z=['Tom', 'Joe', 'John', 'Paul', 'Mike']
+flag=0
+for # your code goes here
+    if # your code goes here
+      print(s,'is on the list')
+      flag=1
+if (flag==0):
+  print(instr,'is not on the list')
+*******************************************************
+inval=float(input('Input a number: '))
+z=[-3, 10, -12.4, 10, 22, -3, 1.2, -3.4]
+sum=0
+for # your code goes here
+  if # your code goes here
+    sum+=s
+print('Sum of numbers in the list greater than',inval,'=', sum)
+***************************************************************
+nstrings=4
+message='Type a word: '
+zlist=[ ]
+for i in range(nstrings):
+  # fill in code here to complete the 'for' loop
+print(zlist)
+**************************************************************
+nvals=7
+message='Input a number: '
+zlist=[ ]
+for i in range(nvals):
+  zlist.append(float(input(message)))
+print('The list = ',zlist)
+maxval=zlist[0]
+for i in range(1,len(zlist)):
+  if zlist[i]>maxval:
+    # complete this 'if' statement
+print('Maximum value =',maxval)
+**********************************************************
+nvals=4
+message='Input a number: '
+
+a=[ ]
+for i in range(nvals):
+  a.append(float(input(message)))
+print('The list = ',a)
+
+b=[7, 0, -3, 8]
+
+c=[ ]
+for i in range(nvals):
+  # complete this 'for' loop to perform element-by-element addition
+
+print('The element-by-element list addition = ',c) 
+*****************************************************************
+nvals=8
+message='Input a number: '
+a=[ ]
+for i in range(nvals):
+  a.append(float(input(message)))
+print('The list = ',a)
+# use slicing to form the list 'b' from the elements of 'a'
+print(b)  
+*********************************************************
+nvals=5
+message='Input a number: '
+a=[ ]
+for i in range(nvals):
+  a.append(float(input(message)))
+print('The list = ',a)
+# use slicing to form list 'b' from the elements of list 'a'
+print(b) 
+*********************************************************
+1. 
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+person1 = Person("John", 30)
+print(f"Name: {person1.name}, Age: {person1.age}")
+```
+
+2.
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print(f"Hello, {self.name}!")
+
+person1 = Person("John", 30)
+person1.greet()
+```
+
+3.
+```python
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def car_details(self):
+        print(f"Make: {self.make}, Model: {self.model}, Year: {self.year}")
+
+car1 = Car("Toyota", "Camry", 2020)
+car1.car_details()
+```
+
+4.
+```python
+import math
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def compute_area(self):
+        area = math.pi * (self.radius ** 2)
+        return area
+
+circle1 = Circle(5)
+print(f"Area of the circle: {circle1.compute_area()}")
+```
+
+5.
+```python
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def compute_area(self):
+        area = self.length * self.width
+        return area
+
+    def compute_perimeter(self):
+        perimeter = 2 * (self.length + self.width)
+        return perimeter
+
+rectangle1 = Rectangle(5, 10)
+print(f"Area of the rectangle: {rectangle1.compute_area()}")
+print(f"Perimeter of the rectangle: {rectangle1.compute_perimeter()}")
+```****************************************************************************
+6. 
+```python
+class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "Bark"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow"
+```
+
+7. 
+```python
+class Shape:
+    def area(self):
+        pass
+
+class Square(Shape):
+    def area(self, side_length):
+        return side_length * side_length
+
+class Triangle(Shape):
+    def area(self, base, height):
+        return 0.5 * base * height
+```
+
+8. 
+```python
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+class Manager(Employee):
+    def __init__(self, name, salary, department):
+        super().__init__(name, salary)
+        self.department = department
+```
+
+9. 
+```python
+class Vehicle:
+    def drive(self):
+        pass
+
+class Bike(Vehicle):
+    def drive(self):
+        return "Riding the bike"
+
+class Truck(Vehicle):
+    def drive(self):
+        return "Driving the truck"
+```
+
+10. 
+```python
+class Bird:
+    def fly(self):
+        pass
+
+class Eagle(Bird):
+    def fly(self):
+        return "Soaring high in the sky"
+
+class Penguin(Bird):
+    def fly(self):
+        return "Penguins cannot fly!"
+```**********************************************************************
+11. 
+```python
+class Account:
+    def __init__(self):
+        self.__balance = 0
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+        else:
+            print("Insufficient funds")
+
+```
+
+12. 
+```python
+class Book:
+    def __init__(self, title, author, pages):
+        self.__title = title
+        self.__author = author
+        self.__pages = pages
+
+    def get_title(self):
+        return self.__title
+
+    def set_title(self, title):
+        self.__title = title
+
+    def get_author(self):
+        return self.__author
+
+    def set_author(self, author):
+        self.__author = author
+
+    def get_pages(self):
+        return self.__pages
+
+    def set_pages(self, pages):
+        self.__pages = pages
+
+```
+
+13. 
+```python
+class Laptop:
+    def __init__(self, brand, model, price):
+        self.__brand = brand
+        self.__model = model
+        self.__price = price
+
+    def apply_discount(self, discount):
+        self.__price -= (self.__price * discount / 100)
+
+    def display_details(self):
+        print(f"Brand: {self.__brand}, Model: {self.__model}, Price: ${self.__price}")
+```
+
+14. 
+```python
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.__account_number = account_number
+        self.__balance = balance
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+        else:
+            print("Insufficient funds")
+
+    def check_balance(self):
+        return self.__balance
+```
+
+15. 
+```python
+class Student:
+    def __init__(self, name, grade, age):
+        self.__name = name
+        self.__grade = grade
+        self.__age = age
+
+    def get_name(self):
+        return self.__name
+
+    def set_name(self, name):
+        self.__name = name
+
+    def get_grade(self):
+        return self.__grade
+
+    def set_grade(self, grade):
+        self.__grade = grade
+
+    def get_age(self):
+        return self.__age
+
+    def set_age(self, age):
+        self.__age = age
+
+    def display_details(self):
+        print(f"Name: {self.__name}, Grade: {self.__grade}, Age: {self.__age}")
+```
+**************************************************************************************
+16. Class Library:
+```python
+class Library:
+    def __init__(self, name):
+        self.name = name
+        self.books = []
+
+    def add_book(self, book):
+        self.books.append(book)
+
+    def remove_book(self, title):
+        for book in self.books:
+            if book.title == title:
+                self.books.remove(book)
+                break
+```
+
+17. Class School:
+```python
+class School:
+    def __init__(self, name):
+        self.name = name
+        self.students = []
+
+    def add_student(self, student):
+        self.students.append(student)
+
+    def remove_student(self, student_id):
+        for student in self.students:
+            if student.student_id == student_id:
+                self.students.remove(student)
+                break
+```
+
+18. Class Team:
+```python
+class Team:
+    def __init__(self, name):
+        self.name = name
+        self.members = []
+
+    def add_member(self, member):
+        self.members.append(member)
+
+    def remove_member(self, member_id):
+        for member in self.members:
+            if member.member_id == member_id:
+                self.members.remove(member)
+                break
+```
+
+19. Class Company:
+```python
+class Company:
+    def __init__(self, name):
+        self.name = name
+        self.employees = []
+
+    def add_employee(self, employee):
+        self.employees.append(employee)
+
+    def remove_employee(self, employee_id):
+        for employee in self.employees:
+            if employee.employee_id == employee_id:
+                self.employees.remove(employee)
+                break
+```
+
+20. Class Zoo:
+```python
+class Zoo:
+    def __init__(self, name):
+        self.name = name
+        self.animals = []
+
+    def add_animal(self, animal):
+        self.animals.append(animal)
+
+    def remove_animal(self, animal_id):
+        for animal in self.animals:
+            if animal.animal_id == animal_id:
+                self.animals.remove(animal)
+                break
+```***************************************************************************
+21. The FileManager class should include methods such as readFile(String filePath) to read from a file and writeFile(String filePath, String content) to write to a file.
+
+22. The Log class should have methods like writeErrorLog(String errorMessage) to write error messages to a log file.
+
+23. The Config class should read configuration settings from a file, for example, loadConfig(String filePath), and provide methods to access these settings, such as getConfigValue(String key).
+
+24. The Database class should have methods to connect to a database, such as connectToDatabase(String url, String username, String password), and methods to execute queries like executeQuery(String query). It should handle exceptions if the connection fails by implementing try-catch blocks and providing appropriate error handling.
+
+25. The Report class should include methods like generateReport(String filePath) to generate a report from data in a file. It should also provide methods to handle exceptions if the file does not exist or cannot be read, such as try-catch blocks and throwing custom exceptions for better error handling.
+
+By implementing these classes with the specified methods, you can effectively manage file operations, logging, configuration settings, database connections, and reporting in your application while ensuring robust error handling and exception management.
+**************************************************************************************************
+26. To create a class Ticket for a movie theater, we would define the class with attributes such as movie_name, seat_number, and price. Here is an example code snippet in Python:
+
+```python
+class Ticket:
+    def __init__(self, movie_name, seat_number, price):
+        self.movie_name = movie_name
+        self.seat_number = seat_number
+        self.price = price
+
+    def display_details(self):
+        print(f"Movie: {self.movie_name}, Seat Number: {self.seat_number}, Price: {self.price}")
+
+    def apply_discount(self, discount):
+        self.price -= (self.price * discount)
+```
+
+In this code snippet, we have defined a Ticket class with the specified attributes. The `display_details` method allows us to print out the details of the ticket, while the `apply_discount` method can be used to apply a discount to the ticket price.
+
+27. For creating a class ShoppingCart with methods to add, remove, and display items, where each item is an object of a class Item with attributes name and price, we can use the following Python code:
+
+```python
+class Item:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+class ShoppingCart:
+    def __init__(self):
+        self.items = []
+
+    def add_item(self, item):
+        self.items.append(item)
+
+    def remove_item(self, item):
+        self.items.remove(item)
+
+    def display_items(self):
+        for item in self.items:
+            print(f"Item: {item.name}, Price: {item.price}")
+```
+
+In this code snippet, we have defined both the Item class and the ShoppingCart class. Items are added to the shopping cart using the `add_item` method and removed using the `remove_item` method. The `display_items` method prints out all items in the shopping cart.
+
+28. To create a class Restaurant with attributes name and menu (a list of Item objects) and methods to add and remove items from the menu, we can use this Python code:
+
+```python
+class Restaurant:
+    def __init__(self, name):
+        self.name = name
+        self.menu = []
+
+    def add_item_to_menu(self, item):
+        self.menu.append(item)
+
+    def remove_item_from_menu(self, item):
+        self.menu.remove(item)
+```
+
+This code snippet defines the Restaurant class with a menu attribute that stores a list of Item objects. Items can be added to or removed from the menu using the `add_item_to_menu` and `remove_item_from_menu` methods respectively.
+
+29. For creating a class Flight with attributes flight_number, destination, and passengers (a list of Person objects) along with methods to add and remove passengers, you can use the following Python code structure:
+
+```python
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+class Flight:
+    def __init__(self, flight_number, destination):
+        self.flight_number = flight_number
+        self.destination = destination
+        self.passengers = []
+
+    def add_passenger(self, passenger):
+        self.passengers.append(passenger)
+
+    def remove_passenger(self, passenger):
+        self.passengers.remove(passenger)
+```
+
+In this code snippet, we have defined both the Person class and the Flight class. Passengers are added to the flight using the `add_passenger` method and removed using the `remove_passenger` method.
+
+30. Finally, to create a class Hotel with attributes name and rooms (a list of Room objects) where each Room has attributes room_number and is_occupied along with methods to book and check-out rooms in Python:
+
+```python
+class Room:
+    def __init__(self, room_number):
+        self.room_number = room_number
+        self.is_occupied = False
+
+class Hotel:
+    def __init__(self, name):
+        self.name = name
+        self.rooms = []
+
+    def book_room(self, room_number):
+        for room in self.rooms:
+            if room.room_number == room_number:
+                room.is_occupied = True
+
+    def check_out_room(self, room_number):
+        for room in self.rooms:
+            if room.room_number == room_number:
+                room.is_occupied = False
+```
+
+This code snippet defines the Room class and Hotel class. Rooms are booked or checked out using the `book_room` and `check_out_room` methods respectively based on their availability status.
+
+These classes provide a structured way to model various entities in a movie theater, shopping cart system, restaurant menu management, flight booking system, and hotel room booking system.
+*************************************************************************************************************
+Certainly! The tasks you've listed involve creating different classes that use the tkinter library to build various graphical user interfaces (GUIs). Let's break down each task:
+
+36. For the CounterApp, you'd create a class that utilizes tkinter to design a simple GUI with buttons for incrementing and decrementing a counter.
+
+37. The ToDoApp class would involve using tkinter to craft a GUI for a to-do list, allowing users to add and remove tasks.
+
+38. Creating the CalculatorApp class would entail using tkinter to develop a GUI for a basic calculator.
+
+39. For the LoginApp class, the goal would be to use tkinter to construct a GUI for a login form.
+
+40. Lastly, the WeatherApp class would involve using tkinter to create
+*******************************************************************************************************
+
+
+
